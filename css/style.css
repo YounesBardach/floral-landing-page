@@ -5,6 +5,7 @@ html, body {
 
 html {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 *, *:before, *:after {
@@ -26,7 +27,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
     margin: 20px 0;
 }
 
@@ -57,22 +57,24 @@ a {
     padding-bottom: 100px;
 }
 
-.awesometext, .awesomeimg {
+.awesometext, .flowerimg {
     flex: 1;
+}
+
+.flowerimg {
+    min-width: 300px;
 }
 
 .maintext {
     font-size: 48px;
     font-weight: 800;
     color: #f9faf8;
-    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 5px;
 }
 
 .secondtext {
     font-size: 18px;
     color: #E5E7EB;
-    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
 }
 
@@ -86,11 +88,6 @@ button {
     border-radius: 10px;
 }
 
-img {
-    max-width: 100%;
-    min-width: 300px;
-}
-
 footer {
     background-color: #1f2937;
     font-size: 18px;
@@ -98,5 +95,39 @@ footer {
     display: flex;
     justify-content: center;
     padding: 30px 0;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+.infoheader {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.text {
+    color: grey;
+    text-align: center;
+}
+
+.infoimages {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.infosquare {
+    max-width: 150px;
+}
+
+.infoimg {
+    width: 150px;
+    height: 150px;
+    border: solid #3882f6;
+    border-radius: 10px;
 }
