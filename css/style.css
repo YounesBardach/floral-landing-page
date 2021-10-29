@@ -5,10 +5,11 @@ html, body {
 
 html {
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
+}
+
+*, *:before, *:after {
     box-sizing: inherit;
-  }
+}
 
 body {
     display: flex;
@@ -88,4 +89,14 @@ button {
 img {
     max-width: 100%;
     min-width: 300px;
+}
+
+footer {
+    background-color: #1f2937;
+    font-size: 18px;
+    color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
