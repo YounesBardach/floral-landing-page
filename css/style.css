@@ -1,16 +1,24 @@
+html, body {
+    height: 100%;
+    margin: 0%;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-html, body {
-    height: 100%;
-    margin: 0%;
-}
-
 .hero {
     background-color: #1f2937;
+    padding: 0 180px;
 }
 
 header {
@@ -18,6 +26,7 @@ header {
     justify-content: space-between;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0;
 }
 
 .logo {
@@ -38,4 +47,45 @@ ul {
 a {
     color: #E5E7EB;
     text-decoration: none;
+}
+
+.awesome {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 100px;
+}
+
+.awesometext, .awesomeimg {
+    flex: 1;
+}
+
+.maintext {
+    font-size: 48px;
+    font-weight: 800;
+    color: #f9faf8;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+
+.secondtext {
+    font-size: 18px;
+    color: #E5E7EB;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+button {
+    font-size: 18px;
+    background-color: #3882f6;
+    color: white;
+    font-weight: bold;
+    padding: 9px 35px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+img {
+    max-width: 100%;
+    min-width: 300px;
 }
