@@ -58,12 +58,8 @@ a {
 .awesome {
     display: flex;
     align-items: flex-start;
-    gap: 40px;
+    gap: 50px;
     padding: 100px 0;
-}
-
-.awesometext, .flowerimg {
-    flex: 1;
 }
 
 .flowerimg {
@@ -155,3 +151,25 @@ main {
     text-align: right;
 }
 
+.action {
+    display: flex;
+    background-color: #3882f6;
+    margin: 100px 200px;
+    border-radius: 10px;
+    padding: 50px 120px;
+    justify-content: space-between;
+}
+
+.mainactiontext {
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+}
+
+.secondactiontext {
+    color: white;
+}
+
+.actionbutton {
+    border: solid white;
+}
