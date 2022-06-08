@@ -1,4 +1,4 @@
-html {
+.flex-base {
     display: flex;
     scroll-behavior: smooth;
     font-family: 'Times New Roman', Times, serif;
@@ -9,7 +9,7 @@ html {
     margin: 0;
 }
 
-body {
+.flex-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -22,7 +22,7 @@ body {
 
 /* Header */
 
-header {
+.flex-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +34,7 @@ header {
     border-radius: 10px;
 }
 
-ul {
+.nav-list {
     list-style-type: none;
     display: flex;
     gap: 20px;
@@ -183,7 +183,7 @@ button:hover {
 
 /* Footer */
 
-footer {
+.flex-footer {
     background-color: #e0634b;
     font-size: 18px;
     display: flex;
