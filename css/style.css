@@ -1,199 +1,278 @@
-.flex-base {
-    display: flex;
-    scroll-behavior: smooth;
-    font-family: 'Times New Roman', Times, serif;
+/*! system-font.css v2.0.2 | CC0-1.0 License | github.com/jonathantneal/system-font-css */
+
+@font-face {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 300;
+    src: local(".SFNS-Light"), local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Segoe UI Light"), local("Ubuntu Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
 
-*, *::after, *::before {
-    padding: 0;
-    margin: 0;
+@font-face {
+    font-family: system-ui;
+    font-style: italic;
+    font-weight: 300;
+    src: local(".SFNS-LightItalic"), local(".SFNSText-LightItalic"), local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"), local("Segoe UI Light Italic"), local("Ubuntu Light Italic"), local("Roboto-LightItalic"), local("DroidSans"), local("Tahoma");
 }
 
-.flex-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+@font-face {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 400;
+    src: local(".SFNS-Regular"), local(".SFNSText-Regular"), local(".HelveticaNeueDeskInterface-Regular"), local(".LucidaGrandeUI"), local("Segoe UI"), local("Ubuntu"), local("Roboto-Regular"), local("DroidSans"), local("Tahoma");
 }
 
-.hero {
-    background-color: #e0634b;
-    padding: 0 180px;
+@font-face {
+    font-family: system-ui;
+    font-style: italic;
+    font-weight: 400;
+    src: local(".SFNS-Italic"), local(".SFNSText-Italic"), local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"), local("Segoe UI Italic"), local("Ubuntu Italic"), local("Roboto-Italic"), local("DroidSans"), local("Tahoma");
 }
 
-/* Header */
+@font-face {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 500;
+    src: local(".SFNS-Medium"), local(".SFNSText-Medium"), local(".HelveticaNeueDeskInterface-MediumP4"), local(".LucidaGrandeUI"), local("Segoe UI Semibold"), local("Ubuntu Medium"), local("Roboto-Medium"), local("DroidSans-Bold"), local("Tahoma Bold");
+}
 
-.flex-header {
+@font-face {
+    font-family: system-ui;
+    font-style: italic;
+    font-weight: 500;
+    src: local(".SFNS-MediumItalic"), local(".SFNSText-MediumItalic"), local(".HelveticaNeueDeskInterface-MediumItalicP4"), local(".LucidaGrandeUI"), local("Segoe UI Semibold Italic"), local("Ubuntu Medium Italic"), local("Roboto-MediumItalic"), local("DroidSans-Bold"), local("Tahoma Bold");
+}
+
+@font-face {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 700;
+    src: local(".SFNS-Bold"), local(".SFNSText-Bold"), local(".HelveticaNeueDeskInterface-Bold"), local(".LucidaGrandeUI"), local("Segoe UI Bold"), local("Ubuntu Bold"), local("Roboto-Bold"), local("DroidSans-Bold"), local("Tahoma Bold");
+}
+
+@font-face {
+    font-family: system-ui;
+    font-style: italic;
+    font-weight: 700;
+    src: local(".SFNS-BoldItalic"), local(".SFNSText-BoldItalic"), local(".HelveticaNeueDeskInterface-BoldItalic"), local(".LucidaGrandeUI"), local("Segoe UI Bold Italic"), local("Ubuntu Bold Italic"), local("Roboto-BoldItalic"), local("DroidSans-Bold"), local("Tahoma Bold");
+}
+
+:root {
+    font-family: system-ui;
+    /* (62.5/100) * 16px = 10px */
+    font-size: 62.5%;
+    /* 14px */
+    --font-size--small: 1.4rem;
+    /* 16px */
+    --font-size--default: 1.6rem;
+    /* 24px */
+    --font-size--large: 2.4rem;
+    --rose-pink: #e0634b;
+    --sunny-white: #f9faf8;
+    --leaf-green: #006400;
+    --leaf-green-tr: rgb(0, 100, 0, 0.5);
+    --juice-orange: #fa9327;
+    --blood-bordeaux: #6d0617;
+    --blood-bordeaux-tr: rgb(109, 6, 23, 0.5);
+}
+
+body {
+    font-size: var(--font-size--default);
+    min-height: 100vh;
+}
+
+.pink-part {
+    background-color: var(--rose-pink);
+    padding: 20px 20px;
+}
+
+.flex-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding-bottom: 20px;
 }
 
-.flowerlogo {
+.round-logo {
     width: 120px;
-    border-radius: 10px;
 }
 
-.nav-list {
+.flex-nav-list {
     list-style-type: none;
     display: flex;
     gap: 20px;
-    font-size: 20px;
+    padding: 0;
 }
 
-a {
-    color: #f9faf8;
+.white-links {
+    color: var(--sunny-white);
     text-decoration: none;
 }
 
-/* Main 1st part */
-
-.awesome {
-    display: flex;
-    align-items: flex-start;
-    gap: 50px;
-    padding: 20px 0;
-}
-
-.flowerimg {
-    width: 400px;
+.rose-bg-present {
+    text-align: center;
     border-radius: 10px;
+    padding: 40px 0;
+    background-image: url(../img/flowerrose.jpg);
+    background-position: top 14% right 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.maintext {
-    font-size: 48px;
-    font-weight: 800;
-    padding-bottom: 5px;
+.bordeaux-tr-bg {
+    background-color: var(--blood-bordeaux-tr);
+    padding: 10px 0;
 }
 
-.secondtext {
-    font-size: 20px;
-    padding-bottom: 10px;
+.no-margin-title {
+    margin: 0;
 }
 
-button {
-    font-size: 18px;
-    background-color: darkgreen;
-    font-weight: bold;
+.green-button {
+    background-color: var(--leaf-green);
     padding: 9px 35px;
     border: 0px;
     border-radius: 10px;
 }
 
-button:hover {
-    background-color: #6d0617;
-}
-
-/* Main 2nd part */
-
-.info {
+.flower-bg {
     background-image: url(../img/leftflowers.jpg);
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.infoheader {
-    font-size: 36px;
-    font-weight: 800;
-    color: #6d0617;
+.bordeaux-title {
+    color: var(--blood-bordeaux);
     text-align: center;
     padding: 20px 0;
+    margin: 0;
 }
 
-.text {
-    color: #6d0617;
-    font-weight: bold;
-    text-align: center;
-    font-size: 18px;
-}
-
-.text:hover, .infoheader:hover {
-    color: darkgreen;
-}
-
-.infoimages {
+.flex-img {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding-bottom: 40px;
 }
 
-.infoimg {
+.round-square-img {
     width: 150px;
     height: 150px;
-    border: solid darkgreen;
+    border: solid var(--leaf-green);
     border-radius: 10px;
     object-fit: cover;
 }
 
-/* Main 3rd part */
-
-.quote {
-    background-color: #fa9327;
-    color: #f9faf8;
-    padding: 50px 320px;
-}
-
-@font-face {
-    font-family: "Lato thin italic";
-    src: url("Lato-ThinItalic.ttf");
-}
-
-.quotation {
-    font-size: 36px;
-    font-family: "Lato thin italic", 'Times New Roman', Times, serif;
+.bordeaux-text {
+    color: var(--blood-bordeaux);
+    text-align: center;
     font-weight: bold;
 }
 
-.author {
-    font-weight: bold;
-    font-size: 25px;
-    text-align: right;
+.orange-part {
+    background-color: var(--juice-orange);
+    color: var(--sunny-white);
+    text-align: center;
+    padding: 40px 10px;
 }
 
-/* Main 4th part */
-
-.bossaction {
-    padding: 80px 200px;
-    background-image: url(../img/leftflowers.jpg);
-    background-size: 100%;
+.italic-large {
+    font-style: italic;
+    font-size: var(--font-size--large);
 }
 
-.action {
+.flex-cont {
     display: flex;
-    background-color: darkgreen;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.green-flex-cont {
+    flex-basis: 70%;
+    display: flex;
+    background-color: var(--leaf-green);
     border-radius: 10px;
-    padding: 40px 50px;
+    padding: 20px 40px;
     justify-content: space-between;
+    align-items: center;
     gap: 20px;
 }
 
-.mainactiontext {
-    font-weight: bold;
-    font-size: 25px;
+.white-border-button {
+    border: solid var(--sunny-white);
 }
 
-.actionbuttoncontainer {
-    display: flex;
-    align-items: center;
-}
-
-.actionbutton {
-    border: solid #f9faf8;
-}
-
-/* Footer */
-
-.flex-footer {
-    background-color: #e0634b;
-    font-size: 18px;
+.pink-part-two {
+    background-color: var(--rose-pink);
     display: flex;
     justify-content: center;
     padding: 20px 0;
+}
+
+.green-button:hover {
+    background-color: var(--blood-bordeaux);
+}
+
+.bordeaux-text:hover, .bordeaux-title:hover {
+    color: var(--leaf-green);
+}
+
+.orange-switch:hover {
+    color: var(--juice-orange);
+}
+
+.bordeaux-switch:hover {
+    color: var(--blood-bordeaux);
+}
+
+/* Subsribe form's stylesheet: */
+
+.form-body {
+    display: flex;
+    background-color: var(--rose-pink);
+}
+
+.form-banner {
+    display: flex;
+    flex-basis: 35%;
+    align-items: center;
+    background-image: url(../img/form-flowers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo-container {
+    height: 20%;
+    width: 100%;
+    background-color: var(--leaf-green-tr);
+    text-align: center;
+}
+
+.logo-img {
+    height: 100%;
+}
+
+.form-content {
+    display: flex;
+    flex-basis: 65%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 40px;
+}
+
+.content-one, .content-two-opener, .form-row-one, .form-row-two, .form-row-three, .form-button {
+    margin-bottom: 20px;
 }
 
 /*
     Image attribution:
 
+    - flowericon.png: Flower Icon in Line Style By Dinosoft Lab, https://iconscout.com/icon/flower-2196267
+    - flowerrose.jpg: Photo by RoonZ nl on Unsplash, https://unsplash.com/photos/ATgfRqpFfFI
+    - weddingflowers.jpeg: Dmitry Zvolskiy, "Woman Wearing White Wedding Dress Holding Flower Bouquet Standing on Green Field", https://www.pexels.com/photo/woman-wearing-white-wedding-dress-holding-flower-bouquet-standing-on-green-field-1721944/
+    - loveflowers.jpeg: Unknown Author, "rose, valentine's, valentine's day, romantic, romance, love, nice, wallpaper, flower, flowers", https://www.pxfuel.com/en/free-photo-qerho
+    - friendshipflowers.jpeg, Unknown Author, "flowers, bouquet, purple, tulips, love, wedding, romantic, bloom, spring, romance", https://www.pxfuel.com/en/free-photo-xvijy
+    - funeralflowers.jpeg, Keesluising, "Flowers, Funeral, Memorial, Goodbye", https://pixabay.com/photos/flowers-funeral-memorial-goodbye-4839339/
     - leftflowers.jpg: Clipart Library, "Flower Border Line Design #1364648", http://clipart-library.com/clipart/kc85GyxMi.htm
+    - form-flowers.jpg: Photo by Rikonavt on Unsplash, https://unsplash.com/photos/oEWdQsbRVZk
 
 */
