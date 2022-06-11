@@ -13,61 +13,67 @@
 
 </head>
 
-<body class="form-body">
+<body class="flex-body">
 
-        <header class="form-banner">
-            <div class="logo-container">
-                <a href="index.html" class="white-links">
-                    <img src="img/flowericon.png" alt="Rose logo" class="logo-img">
-                    Online Flower Experts
-                </a>
-            </div>
-        </header>
+    <header class="flower-bg-banner">
 
-        <main class="form-content">
+        <div class="green-tr-band">
+            <a href="index.html"><img src="img/flowericon-gr.png" alt="Rose logo" class="logo-width"></a>
+            <a href="index.html" class="nature-gr-links">Online Flower Experts</a>
+        </div>
 
-            <div class="content-one">
+    </header>
+
+    <main class="flex-form-part">
+
+        <div class="nature-bg">
+            <p>
                 Subscribe to our newsletter! A special flower will be delivered to your inbox once a month <br><br> You
                 will be surprised!
-            </div>
+            </p>
+        </div>
 
-            <div>
+        <div class="pink-bg">
 
-                <div class="content-two-opener">Open your account to manage your newsfeed:</div>
+            <p class="no-margin charcoal-border">Open your account to manage your newsfeed</p>
+            <p class="no-margin">(Required fields are followed by <abbr title="required" class="bordeaux-asterisk"
+                    aria-label="required">*</abbr>)</p>
 
-                <div class="form-row-one">
-                    <label for="">First Name:</label>
-                    <input type="text">
-                    <label for="">Last Name:</label>
-                    <input type="text">
-                </div>
-
-                <div class="form-row-two">
-                    <label for="">Email:</label>
-                    <input type="text">
-                    <label for="">Phone Number:</label>
-                    <input type="text">
-                </div>
-
-                <div class="form-row-three">
-                    <label for="">Password:</label>
-                    <input type="text">
-                    <label for="">Confirm Password:</label>
-                    <input type="text">
-                </div>
-
+            <form method="post" class="flex-inputs" id="news-form">
                 <div>
-
-                    <div>
-                        <button type="submit" class="green-button white-links">Create Account</button>
-                    </div>
-                    <div>Already have an account? <a href="#!" class="white-links">Log in</a></div>
-
+                    <label for="name" class="pointer-add"><abbr title="required" aria-label="required">*</abbr> Username</label>
                 </div>
+                <div>
+                    <input type="text" class="rounded-input charcoal-focus" id="name" name="name" required
+                        autocomplete="name" pattern="">
+                </div>
+                <div>
+                    <label for="email" class="pointer-add"><abbr title="required" aria-label="required">*</abbr> Email</label>
+                </div>
+                <div>
+                    <input type="email" inputmode="email" class="rounded-input charcoal-focus" id="email" name="email"
+                        required autocomplete="email">
+                </div>
+                <div>
+                    <label for="new-password" class="pointer-add"><abbr title="required" aria-label="required">*</abbr> Password</label>
+                </div>
+                <div>
+                    <input type="password" class="rounded-input charcoal-focus" id="new-password" name="new-password" required
+                        autocomplete="new-password" pattern="">
+                </div>
+            </form>
 
+        </div>
+
+        <div class="nature-bg">
+            <div>
+                <button type="submit" class="green-button white-links pointer-add" form="news-form">Create
+                    Account</button>
             </div>
+            <p>Already have an account? <a href="#!" class="bordeaux-links">Log in</a></p>
+        </div>
 
-        </main>
+    </main>
 
 </body>
 
