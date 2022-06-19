@@ -1,80 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online Flower Form</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <script src="js/script.js" defer></script>
+  </head>
 
-</head>
-
-<body class="flex-body">
-
+  <body class="flex-body">
     <header class="flower-bg-banner">
-
-        <div class="green-tr-band">
-            <a href="index.html"><img src="img/flowericon-gr.png" alt="Rose logo" class="logo-width"></a>
-            <a href="index.html" class="nature-gr-links">Online Flower Experts</a>
-        </div>
-
+      <div class="green-tr-band">
+        <a href="index.html"
+          ><img src="img/flowericon-gr.png" alt="Rose logo" class="logo-width"
+        /></a>
+        <a href="index.html" class="nature-gr-links">Online Flower Experts</a>
+      </div>
     </header>
 
     <main class="flex-form-part">
+      <div class="nature-bg">
+        <p>
+          Subscribe to our newsletter! A special flower will be delivered to
+          your inbox once a month <br /><br />
+          You will be surprised!
+        </p>
+      </div>
 
-        <div class="nature-bg">
-            <p>
-                Subscribe to our newsletter! A special flower will be delivered to your inbox once a month <br><br> You
-                will be surprised!
-            </p>
+      <div class="pink-bg">
+        <p class="no-margin charcoal-border">
+          Create an account to manage your newsfeed
+        </p>
+        <form method="post" class="flex-inputs" id="news-form">
+          <div>
+            <label for="username" class="pointer-add">Username (optional)</label
+            ><br />
+            <input
+              autofocus
+              autocapitalize="words"
+              type="text"
+              class="rounded-input charcoal-focus"
+              id="username"
+              name="username"
+              autocomplete="username"
+              pattern="(?=^[\w]{1,}$).*"
+              title="Your username can only contain letters, numbers, and/or underscores _ (example: user_22)"
+              enterkeyhint="next"
+            />
+          </div>
+          <p class="indicator-username no-margin"></p>
+          <div>
+            <label for="email" class="pointer-add">Email</label><br />
+            <input
+              type="email"
+              inputmode="email"
+              class="rounded-input charcoal-focus"
+              id="email"
+              name="email"
+              required
+              autocomplete="email"
+              title="Your email must include a local-part, the at sign @, and a domain (example: simple@email.com)"
+              enterkeyhint="next"
+            />
+          </div>
+          <p class="indicator-email no-margin"></p>
+          <div>
+            <label for="new-password" class="pointer-add">Password</label><br />
+            <input
+              type="password"
+              class="rounded-input charcoal-focus"
+              id="new-password"
+              name="new-password"
+              required
+              autocomplete="new-password"
+              pattern="(?=^.{8,}$)(?=.*\d)(?=.*[\W_])(?=.*[A-Z])(?=.*[a-z]).*"
+              title="Your password must be at least 8 characters long, and contain numbers, upper- and lowercase letters, and special characters (example: Super$ecret1)"
+              enterkeyhint="done"
+            />
+          </div>
+          <p class="indicator-new-password no-margin"></p>
+        </form>
+        <p class="no-margin"><input type="checkbox" name="passwordShower" id="passwordShower" class="pointer-add"> Show password</p>
+      </div>
+
+      <div class="nature-bg">
+        <div>
+          <button
+            type="submit"
+            class="green-button white-links pointer-add"
+            form="news-form"
+          >
+            Create Account
+          </button>
         </div>
-
-        <div class="pink-bg">
-
-            <p class="no-margin charcoal-border">Open your account to manage your newsfeed</p>
-            <p class="no-margin">(Required fields are followed by <abbr title="required" class="bordeaux-asterisk"
-                    aria-label="required">*</abbr>)</p>
-
-            <form method="post" class="flex-inputs" id="news-form">
-                <div>
-                    <label for="name" class="pointer-add"><abbr title="required" aria-label="required">*</abbr> Username</label>
-                </div>
-                <div>
-                    <input type="text" class="rounded-input charcoal-focus" id="name" name="name" required
-                        autocomplete="name" pattern="">
-                </div>
-                <div>
-                    <label for="email" class="pointer-add"><abbr title="required" aria-label="required">*</abbr> Email</label>
-                </div>
-                <div>
-                    <input type="email" inputmode="email" class="rounded-input charcoal-focus" id="email" name="email"
-                        required autocomplete="email">
-                </div>
-                <div>
-                    <label for="new-password" class="pointer-add"><abbr title="required" aria-label="required">*</abbr> Password</label>
-                </div>
-                <div>
-                    <input type="password" class="rounded-input charcoal-focus" id="new-password" name="new-password" required
-                        autocomplete="new-password" pattern="">
-                </div>
-            </form>
-
-        </div>
-
-        <div class="nature-bg">
-            <div>
-                <button type="submit" class="green-button white-links pointer-add" form="news-form">Create
-                    Account</button>
-            </div>
-            <p>Already have an account? <a href="#!" class="bordeaux-links">Log in</a></p>
-        </div>
-
+        <p>
+          Already have an account?
+          <a href="#!" class="bordeaux-links">Sign in</a>
+        </p>
+      </div>
     </main>
-
-</body>
-
+  </body>
 </html>

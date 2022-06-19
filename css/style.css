@@ -3,326 +3,358 @@
 /*! system-font.css v2.0.2 | CC0-1.0 License | github.com/jonathantneal/system-font-css */
 
 @font-face {
-    font-family: system-ui;
-    font-style: normal;
-    font-weight: 300;
-    src: local(".SFNS-Light"), local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Segoe UI Light"), local("Ubuntu Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+  font-family: system-ui;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNS-Light"), local(".SFNSText-Light"),
+    local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"),
+    local("Segoe UI Light"), local("Ubuntu Light"), local("Roboto-Light"),
+    local("DroidSans"), local("Tahoma");
 }
 
 @font-face {
-    font-family: system-ui;
-    font-style: italic;
-    font-weight: 300;
-    src: local(".SFNS-LightItalic"), local(".SFNSText-LightItalic"), local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"), local("Segoe UI Light Italic"), local("Ubuntu Light Italic"), local("Roboto-LightItalic"), local("DroidSans"), local("Tahoma");
+  font-family: system-ui;
+  font-style: italic;
+  font-weight: 300;
+  src: local(".SFNS-LightItalic"), local(".SFNSText-LightItalic"),
+    local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"),
+    local("Segoe UI Light Italic"), local("Ubuntu Light Italic"),
+    local("Roboto-LightItalic"), local("DroidSans"), local("Tahoma");
 }
 
 @font-face {
-    font-family: system-ui;
-    font-style: normal;
-    font-weight: 400;
-    src: local(".SFNS-Regular"), local(".SFNSText-Regular"), local(".HelveticaNeueDeskInterface-Regular"), local(".LucidaGrandeUI"), local("Segoe UI"), local("Ubuntu"), local("Roboto-Regular"), local("DroidSans"), local("Tahoma");
+  font-family: system-ui;
+  font-style: normal;
+  font-weight: 400;
+  src: local(".SFNS-Regular"), local(".SFNSText-Regular"),
+    local(".HelveticaNeueDeskInterface-Regular"), local(".LucidaGrandeUI"),
+    local("Segoe UI"), local("Ubuntu"), local("Roboto-Regular"),
+    local("DroidSans"), local("Tahoma");
 }
 
 @font-face {
-    font-family: system-ui;
-    font-style: italic;
-    font-weight: 400;
-    src: local(".SFNS-Italic"), local(".SFNSText-Italic"), local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"), local("Segoe UI Italic"), local("Ubuntu Italic"), local("Roboto-Italic"), local("DroidSans"), local("Tahoma");
+  font-family: system-ui;
+  font-style: italic;
+  font-weight: 400;
+  src: local(".SFNS-Italic"), local(".SFNSText-Italic"),
+    local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"),
+    local("Segoe UI Italic"), local("Ubuntu Italic"), local("Roboto-Italic"),
+    local("DroidSans"), local("Tahoma");
 }
 
 @font-face {
-    font-family: system-ui;
-    font-style: normal;
-    font-weight: 500;
-    src: local(".SFNS-Medium"), local(".SFNSText-Medium"), local(".HelveticaNeueDeskInterface-MediumP4"), local(".LucidaGrandeUI"), local("Segoe UI Semibold"), local("Ubuntu Medium"), local("Roboto-Medium"), local("DroidSans-Bold"), local("Tahoma Bold");
+  font-family: system-ui;
+  font-style: normal;
+  font-weight: 500;
+  src: local(".SFNS-Medium"), local(".SFNSText-Medium"),
+    local(".HelveticaNeueDeskInterface-MediumP4"), local(".LucidaGrandeUI"),
+    local("Segoe UI Semibold"), local("Ubuntu Medium"), local("Roboto-Medium"),
+    local("DroidSans-Bold"), local("Tahoma Bold");
 }
 
 @font-face {
-    font-family: system-ui;
-    font-style: italic;
-    font-weight: 500;
-    src: local(".SFNS-MediumItalic"), local(".SFNSText-MediumItalic"), local(".HelveticaNeueDeskInterface-MediumItalicP4"), local(".LucidaGrandeUI"), local("Segoe UI Semibold Italic"), local("Ubuntu Medium Italic"), local("Roboto-MediumItalic"), local("DroidSans-Bold"), local("Tahoma Bold");
+  font-family: system-ui;
+  font-style: italic;
+  font-weight: 500;
+  src: local(".SFNS-MediumItalic"), local(".SFNSText-MediumItalic"),
+    local(".HelveticaNeueDeskInterface-MediumItalicP4"),
+    local(".LucidaGrandeUI"), local("Segoe UI Semibold Italic"),
+    local("Ubuntu Medium Italic"), local("Roboto-MediumItalic"),
+    local("DroidSans-Bold"), local("Tahoma Bold");
 }
 
 @font-face {
-    font-family: system-ui;
-    font-style: normal;
-    font-weight: 700;
-    src: local(".SFNS-Bold"), local(".SFNSText-Bold"), local(".HelveticaNeueDeskInterface-Bold"), local(".LucidaGrandeUI"), local("Segoe UI Bold"), local("Ubuntu Bold"), local("Roboto-Bold"), local("DroidSans-Bold"), local("Tahoma Bold");
+  font-family: system-ui;
+  font-style: normal;
+  font-weight: 700;
+  src: local(".SFNS-Bold"), local(".SFNSText-Bold"),
+    local(".HelveticaNeueDeskInterface-Bold"), local(".LucidaGrandeUI"),
+    local("Segoe UI Bold"), local("Ubuntu Bold"), local("Roboto-Bold"),
+    local("DroidSans-Bold"), local("Tahoma Bold");
 }
 
 @font-face {
-    font-family: system-ui;
-    font-style: italic;
-    font-weight: 700;
-    src: local(".SFNS-BoldItalic"), local(".SFNSText-BoldItalic"), local(".HelveticaNeueDeskInterface-BoldItalic"), local(".LucidaGrandeUI"), local("Segoe UI Bold Italic"), local("Ubuntu Bold Italic"), local("Roboto-BoldItalic"), local("DroidSans-Bold"), local("Tahoma Bold");
+  font-family: system-ui;
+  font-style: italic;
+  font-weight: 700;
+  src: local(".SFNS-BoldItalic"), local(".SFNSText-BoldItalic"),
+    local(".HelveticaNeueDeskInterface-BoldItalic"), local(".LucidaGrandeUI"),
+    local("Segoe UI Bold Italic"), local("Ubuntu Bold Italic"),
+    local("Roboto-BoldItalic"), local("DroidSans-Bold"), local("Tahoma Bold");
 }
 
 :root {
-    font-family: system-ui;
-    /* (62.5/100) * 16px = 10px */
-    font-size: 62.5%;
-    /* 14px */
-    --font-size--small: 1.4rem;
-    /* 16px */
-    --font-size--default: 1.6rem;
-    /* 24px */
-    --font-size--large: 2.4rem;
-    --rose-pink: #e0634b;
-    --sunny-white: #f9faf8;
-    --leaf-green: #006400;
-    --leaf-green-tr: rgb(0, 100, 0, 0.7);
-    --nature-green: #aadd55;
-    --juice-orange: #fa9327;
-    --orange-light: #ffb466;
-    --blood-bordeaux: #6d0617;
-    --blood-bordeaux-tr: rgb(109, 6, 23, 0.7);
-    --charcoal-grey: #212221;
+  font-family: system-ui;
+  /* (62.5/100) * 16px = 10px */
+  font-size: 62.5%;
+  /* 14px */
+  --font-size--small: 1.4rem;
+  /* 16px */
+  --font-size--default: 1.6rem;
+  /* 24px */
+  --font-size--large: 2.4rem;
+  --rose-pink: #e0634b;
+  --sunny-white: #f9faf8;
+  --leaf-green: #006400;
+  --leaf-green-tr: rgb(0, 100, 0, 0.7);
+  --nature-green: #aadd55;
+  --juice-orange: #fa9327;
+  --orange-light: #ffb466;
+  --blood-bordeaux: #6d0617;
+  --blood-bordeaux-tr: rgb(109, 6, 23, 0.7);
+  --charcoal-grey: #212221;
 }
 
 body {
-    font-size: var(--font-size--default);
-    min-height: 100vh;
+  font-size: var(--font-size--default);
+  min-height: 100vh;
 }
 
 .pink-part {
-    background-color: var(--rose-pink);
-    padding: 20px 20px;
+  background-color: var(--rose-pink);
+  padding: 20px 20px;
 }
 
 .flex-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 .logo-width {
-    width: 100px;
+  width: 100px;
 }
 
 .flex-nav-list {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
 }
 
 .gray-links {
-    color: var(--charcoal-grey);
-    text-decoration: none;
+  color: var(--charcoal-grey);
+  text-decoration: none;
 }
 
 .white-links {
-    color: var(--sunny-white);
-    text-decoration: none;
+  color: var(--sunny-white);
+  text-decoration: none;
 }
 
 .rose-bg-present {
-    text-align: center;
-    border-radius: 10px;
-    padding: 40px 0;
-    background-image: url(../img/flowerrose.jpg);
-    background-position: top 14% right 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
+  text-align: center;
+  border-radius: 10px;
+  padding: 40px 0;
+  background-image: url(../img/flowerrose.jpg);
+  background-position: top 14% right 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .bordeaux-tr-bg {
-    background-color: var(--blood-bordeaux-tr);
-    padding: 10px 0;
+  background-color: var(--blood-bordeaux-tr);
+  padding: 10px 0;
 }
 
 .no-margin-title {
-    margin: 0;
+  margin: 0;
 }
 
 .green-button {
-    background-color: var(--leaf-green);
-    padding: 9px 35px;
-    border: 0px;
-    border-radius: 10px;
+  background-color: var(--leaf-green);
+  padding: 9px 35px;
+  border: 0px;
+  border-radius: 10px;
 }
 
 .flower-bg {
-    background-image: url(../img/leftflowers.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url(../img/leftflowers.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .bordeaux-title {
-    color: var(--blood-bordeaux);
-    text-align: center;
-    padding: 20px 0;
-    margin: 0;
+  color: var(--blood-bordeaux);
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
 }
 
 .flex-img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .round-square-img {
-    width: 150px;
-    height: 150px;
-    border: solid var(--leaf-green);
-    border-radius: 10px;
-    object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border: solid var(--leaf-green);
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .bordeaux-text {
-    color: var(--blood-bordeaux);
-    text-align: center;
-    font-weight: bold;
+  color: var(--blood-bordeaux);
+  text-align: center;
+  font-weight: bold;
 }
 
 .orange-part {
-    background-color: var(--juice-orange);
-    color: var(--sunny-white);
-    text-align: center;
-    padding: 40px 10px;
+  background-color: var(--juice-orange);
+  color: var(--sunny-white);
+  text-align: center;
+  padding: 40px 10px;
 }
 
 .italic-large {
-    font-style: italic;
-    font-size: var(--font-size--large);
-    color: var(--charcoal-grey);
+  font-style: italic;
+  font-size: var(--font-size--large);
+  color: var(--charcoal-grey);
 }
 
 .author {
-    color: var(--charcoal-grey);
+  color: var(--charcoal-grey);
 }
 
 .flex-cont {
-    display: flex;
-    justify-content: center;
-    padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
 }
 
 .green-flex-cont {
-    flex-basis: 70%;
-    display: flex;
-    background-color: var(--leaf-green);
-    border-radius: 10px;
-    padding: 20px 40px;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+  flex-basis: 70%;
+  display: flex;
+  background-color: var(--leaf-green);
+  border-radius: 10px;
+  padding: 20px 40px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
 .white-border-button {
-    border: solid var(--sunny-white);
+  border: solid var(--sunny-white);
 }
 
 .pink-part-two {
-    background-color: var(--rose-pink);
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
+  background-color: var(--rose-pink);
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
 }
 
 .green-button:hover {
-    background-color: var(--blood-bordeaux);
+  background-color: var(--blood-bordeaux);
 }
 
-.bordeaux-text:hover, .bordeaux-title:hover {
-    color: var(--leaf-green);
+.bordeaux-text:hover,
+.bordeaux-title:hover {
+  color: var(--leaf-green);
 }
 
 /* Subsribe form's stylesheet: */
 
 .flex-body {
-    display: flex;
+  display: flex;
 }
 
 .flower-bg-banner {
-    flex-basis: 35%;
-    background-image: url(../img/form-flowers.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+  flex-basis: 35%;
+  background-image: url(../img/form-flowers.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .green-tr-band {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 30%;
-    height: 20%;
-    background-color: var(--leaf-green-tr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 30%;
+  height: 20%;
+  background-color: var(--leaf-green-tr);
 }
 
 .nature-gr-links {
-    color: var(--nature-green);
-    font-size: var(--font-size--large);
-    text-decoration: none;
+  color: var(--nature-green);
+  font-size: var(--font-size--large);
+  text-decoration: none;
 }
 
 .flex-form-part {
-    display: flex;
-    flex-basis: 65%;
-    flex-direction: column;
+  display: flex;
+  flex-basis: 65%;
+  flex-direction: column;
 }
 
 .nature-bg {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-basis: 20%;
-    background-color: var(--nature-green);
-    color: var(--blood-bordeaux);
-    padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 20%;
+  background-color: var(--nature-green);
+  color: var(--blood-bordeaux);
+  padding: 10px 30px;
 }
 
 .bordeaux-links {
-    color: var(--blood-bordeaux);
+  color: var(--blood-bordeaux);
 }
 
 .pink-bg {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-basis: 60%;
-    background-color: var(--rose-pink);
-    color: var(--charcoal-grey);
-    padding: 10px 30px;
-    gap: 20px;
-    box-shadow: 0px 5px 5px rgb(33, 34, 33, 0.3), 0px 10px 10px rgb(33, 34, 33, 0.4);
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 60%;
+  background-color: var(--rose-pink);
+  color: var(--charcoal-grey);
+  padding: 10px 30px;
+  gap: 10px;
+  box-shadow: 0px 5px 5px rgb(33, 34, 33, 0.3),
+    0px 10px 10px rgb(33, 34, 33, 0.4);
+  position: relative;
 }
 
 .no-margin {
-    margin: 0;
+  margin: 0;
 }
 
 .charcoal-border {
-    border-bottom: 1px solid var(--charcoal-grey);
-    padding-bottom: 10px;
+  border-bottom: 1px solid var(--charcoal-grey);
+  padding-bottom: 10px;
 }
 
 .flex-inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .pointer-add {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .rounded-input {
-    border-radius: 3px;
+  border-radius: 3px;
 }
 
 .charcoal-focus:focus-visible {
-    border: 2px solid var(--charcoal-grey);
-    outline-color: transparent;
-    outline-width: 2px;
-    outline-style: dotted;
-    box-shadow: 5px 5px 5px var(--charcoal-grey);
+  border: 2px solid var(--charcoal-grey);
+  outline-color: transparent;
+  outline-width: 2px;
+  outline-style: dotted;
+  box-shadow: 5px 5px 5px var(--charcoal-grey);
 }
+
+.hide-indicator {
+  display: none;
+}
+
 
 
 /*
