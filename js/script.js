@@ -1,8 +1,3 @@
-// Assitive check
-
-//mobile testing
-// see env() for mobile https://developer.mozilla.org/en-US/docs/Web/CSS/env#using_env_to_ensure_buttons_are_not_obscured_by_device_ui
-
 const inputValues = [...document.getElementById("news-form").elements];
 inputValues.pop();
 const usernameRegex = [/(?=^[\w]{1,}$)/];
